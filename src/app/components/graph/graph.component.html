@@ -1,0 +1,11 @@
+<div>
+  <div class="sticks_container">
+    <app-stick *ngFor="let stick of sticks" [stick]="stick"></app-stick>
+  </div>
+  <div class="buttons_container">
+    <button (click)="quickSort()">Quick sort</button>
+    <button (click)="bubbleSort()">Bubble sort</button>
+    <button (click)="insertionSort()">Insertion sort</button>
+    <button (click)="reset()">Reset</button>
+  </div>
+</div>
